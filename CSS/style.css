@@ -1,0 +1,78 @@
+h1 {
+    font-family: 'Gowun Dodum', sans-serif;
+    color: #fd7928;
+    text-align: center;
+    font-size: 130px;
+}
+
+h2 {
+    color: white;
+    text-align: center;
+}
+
+.noticias {
+    text-align: center;
+    margin-bottom: 100px;
+}
+
+.contacto {
+    color: white;
+    text-align: center;
+    margin-bottom: 100px;
+}
+
+body {
+    background-color: #3b5998;
+}
+
+a {
+    text-decoration: none;
+    color: #fd7928;
+}
+
+.logoIndex {
+    align-items: center;
+    align-content: center;
+    margin-bottom: 50px;
+}
+
+p {
+  color: white;
+  margin-left: 10px;
+  margin-top: 100px;
+  margin-right: 10px;
+  margin-bottom: 100px;
+  text-align: justify;
+}
+
+/*
+.menuPrincipal {
+    display: inline-flex;
+    padding-left: 40px;
+    padding-right: 40px;
+    margin-left: 20px;
+    margin-right: 20px;
+} */
+
+
+ul {
+    list-style: none;
+    font-size:0 /* truco por el uso de inline-block*/
+ }
+ li {
+    display: inline-block;
+    width: 25%;
+    position:relative;
+    font-size: 14px
+ }
+ ul ul {
+    position: absolute;
+    display: none;
+ }
+ ul ul li {
+    display: block;
+ }
+ ul li:hover ul {
+    display:block;
+ }
+
