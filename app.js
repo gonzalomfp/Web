@@ -14,7 +14,7 @@ console.log ('Bienvenido: ' + nombre);
 alert('Bienvenido' + ' ' + (nombre));
 
 
-/*
+
 
 if (nombre == "") {
     alert("No ingresaste el nombre de usuario");
@@ -22,5 +22,3 @@ if (nombre == "") {
 else {
     alert('Bienvenido' + ' ' + (nombre));
 }
-
-*/
