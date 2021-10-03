@@ -17,7 +17,7 @@ if (nombre === "") {
 else {
     alert('Bienvenido' + ' ' + (nombre));
 }
-*/
+
 
 
 let i = prompt ('Ingresar un dato');
@@ -27,4 +27,6 @@ while (i != "ESC") {
     alert(`El usuario ingresó ${i}`);
 
     i = prompt('Ingresar otro dato');
-}
+} 
+
+*/

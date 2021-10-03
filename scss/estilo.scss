@@ -5,22 +5,32 @@ $myOrange: #ff8040;
     color: $myBlue;
 }
 
-.titulo {
-   color: white;
-   font-size: 100px;
+.title {
+   color:white;
+   font-size: 60px;
 
     position: absolute;
-    top: 500px; 
-    left: 500px;
+    top: 100px;
+    left: 30px;
 }
 
+.subtitle {
+    color:white;
+    font-size: 20px;
+
+    position: absolute;
+    top: 330px;
+    left: 30px;
+} 
+
+/*
 .logoIG {
     width: 80px;
     height: 80px;
     position: fixed;
     bottom: 0;
     right: 0;
-}
+} */
 
 .flechaIndex {
     width: auto;
@@ -50,5 +60,29 @@ $myOrange: #ff8040;
 }
 
 /* ------------------------- */
+
+.flechaIndex {
+    display: flex;
+    flex-direction: column;
+    background-color: $myOrange;
+    border: 1px;
+   
+}
+
+.flexIndexNav {
+    width: 100px;
+    height: 100px;
+    justify-content: flex-end;
+}
+
+.flexIndexNavOne {
+    width: 430px;
+    height: 500px;
+    background-color: $myBlue;
+}
+
+
+
+// Web
 
 
