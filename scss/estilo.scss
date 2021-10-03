@@ -1,0 +1,54 @@
+$myBlue: #3b5998;
+$myOrange: #ff8040;
+
+#nav {
+    color: $myBlue;
+}
+
+.titulo {
+   color: white;
+   font-size: 100px;
+
+    position: absolute;
+    top: 500px; 
+    left: 500px;
+}
+
+.logoIG {
+    width: 80px;
+    height: 80px;
+    position: fixed;
+    bottom: 0;
+    right: 0;
+}
+
+.flechaIndex {
+    width: auto;
+    height: 80px;
+ 
+     position: absolute;
+     top: 1100px; 
+     left: 760px;
+}
+
+/* Volver */
+
+.volver {
+    color: $myOrange;
+}
+
+.volver:hover {
+    color: $myOrange;
+}
+
+.volver:active {
+    color: $myBlue;
+}
+
+.volver:focus {
+    color: $myBlue;
+}
+
+/* ------------------------- */
+
+
