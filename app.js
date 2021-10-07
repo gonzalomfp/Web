@@ -29,8 +29,29 @@ while (i != "ESC") {
     i = prompt('Ingresar otro dato');
 } 
 
-*/
+
 
 for (let index = 0; index < 10; i++) {
     
+} */
+
+let ingresoDeUsuario;
+let sumado;
+
+function ingresarCosto() {
+    //let valor = prompt ("Ingrese por favor su $$");
+    let valor = 10;
+    return valor 
+
+}
+ingresoDeUsuario=ingresarCosto();
+
+function sumarIva (resultado){
+    return resultado *1.21;
+}
+
+sumado = sumarIva (ingresoDeUsuario);
+
+function mostrarIva(precioCalculado){
+    console.log("el precio sumado es de : " + precioCalculado);
 }
