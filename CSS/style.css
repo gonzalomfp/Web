@@ -1,0 +1,48 @@
+header {
+  background-image: url(../assets/fondoIndex1.png); }
+
+h1 {
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  color: white; }
+
+h2 {
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  color: white; }
+
+.headerContainer {
+  height: 70vh;
+  display: flex;
+  flex-direction: column; }
+
+.headerContainerTitle {
+  order: 2;
+  height: 25%;
+  justify-content: flex-end;
+  padding-left: 2rem;
+  font-size: 40px; }
+
+.headerContainerSubtitle {
+  order: 3;
+  height: 25%;
+  justify-content: flex-start;
+  padding-left: 2rem;
+  font-size: 20px; }
+
+.headerContainerSpace1 {
+  order: 1;
+  height: 25%; }
+
+.headerContainerSpace2 {
+  order: 4;
+  height: 25%; }
+
+.mainContainer {
+  background-color: white;
+  height: 50vh; }
+
+.endContainer {
+  background-color: #3b5998;
+  height: 80vh; }
+
+.footerContainer {
+  height: 40vh; }
