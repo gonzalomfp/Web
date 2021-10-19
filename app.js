@@ -1,101 +1,61 @@
+// function Persona(nombre, nacionalidad) {
+
+//     this.nombre = nombre;
+//     this.nacionalidad = nacionalidad;
+
+// }
+
 // let nombre = prompt('Ingresá tu nombre')
+// let nacionalidad = prompt('Nacionalidad')
 
-// alert(`¡Hola ${nombre}! Bienvenido a mi Web`)
-
-// for (let i = 0; index < 10; i++) {
-
-// }
-
-// while (entrada !="ESC") {
-//  alert("El usuario ingresó " + entrada);
-//  entrada = prompt("Ingresar otro dato")
-//}
-
-
-// switch (nombre) {
-//     case 'Gonzalo':
-//         alert('Hola Gonzalo')
-//         break;
-
-//     case 'Matias':
-//         alert('Hola Matias')
-//         break;
-
-//     default:
-//         alert('No te conozco')
-//         break;
-// }
-
-// if(nombre === "gonzalo") {
-//     alert('Hola Gonzalo')
-// } else if (nombre === 'Matias'){
-//     alert('Hola Matias')
-// } else {
-//     alert('No sé quien sos')
-// }
-
-
-// animal = 123
-
-// console.log(typeof animal);
-
-//boolean
-//string
-//number
-//null
-//undefined
-//BigInt
-//Symbol
-
-// Tipo de datos primitos: No poseen propiedades ni metodos y son inmutables
-
-// const persona1 = new Object({
-//         nombre: 'Andres'
-//     }
-
-// )
-// const persona2 = {
-//     nombre: 'Andres',
-//     edad: 25,
-
-//     saludar: function() {
-//         console.log('Hola, que tal?')
-//     }
-// }
-
-// console.log(typeof persona1)
-// console.log(typeof persona2)
+// const persona1 = new Persona(nombre, nacionalidad)
 
 // console.log(persona1)
 
-// console.log(persona2.nombre);
+// console.log(typeof persona1);
 
-// console.log(persona2['nombre']);
-
-// console.log(persona2.saludar());
-
-// persona2.profesion = 'Desarrollador'
-
-// console.log(persona2);
+// alert(`¡Hola ${nombre}, gracias por seguirme desde ${nacionalidad}!`)
 
 
-function Persona(nombre, nacionalidad) {
+// class Persona {
+//     constructor (nombre, nacionalidad) {
+//         this.nombre = nombre
+//         this.nacionalidad = nacionalidad
+//     }
+//     saludar () {
+//         console.log('Hola que tal' );
+//     }
+// }
+// let nombre = prompt ('Decime tu nombre')
+// let nacionalidad = prompt ('Desde donde me seguis')
+
+// const persona = new Persona (nombre, nacionalidad)
+
+// alert(`¡Hola ${nombre}, gracias por seguirme desde ${nacionalidad}!`)
+
+// console.log(persona);
+// persona.saludar()
+
+class Producto {
+    constructor (nombre, precio, enStock){
 
     this.nombre = nombre;
-    this.nacionalidad = nacionalidad;
+    this.precio = precio;
+    this.enStock = enStock;
+    }   
 
+    getPrecioConIva() {
+        return this.precio * 1.21
+
+    }
+
+    getPrecio() {
+        return this.precio
+    }
 }
 
+const producto1 = new Producto ('Fernet', 500)
 
-let nombre = prompt('Ingresá tu nombre')
-let nacionalidad = prompt('Nacionalidad')
+console.log(producto1.getPrecio());
 
-const persona1 = new Persona(nombre, nacionalidad)
-
-console.log(persona1)
-
-console.log(typeof persona1);
-
-alert(`¡Hola ${nombre}, gracias por seguirme desde ${nacionalidad}!`)
-
-//01:30
+console.log(producto1.getPrecioConIva());
