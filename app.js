@@ -1,47 +1,17 @@
-// function Persona(nombre, nacionalidad) {
 
-//     this.nombre = nombre;
-//     this.nacionalidad = nacionalidad;
+// let nombre = prompt ('¡Hola! Ingresá tu nombre')
+// let nacionalidad = prompt ('Desde que país estás ingresando')
 
-// }
-
-// let nombre = prompt('Ingresá tu nombre')
-// let nacionalidad = prompt('Nacionalidad')
-
-// const persona1 = new Persona(nombre, nacionalidad)
-
-// console.log(persona1)
-
-// console.log(typeof persona1);
-
-// alert(`¡Hola ${nombre}, gracias por seguirme desde ${nacionalidad}!`)
-
-
-// class Persona {
-//     constructor (nombre, nacionalidad) {
-//         this.nombre = nombre
-//         this.nacionalidad = nacionalidad
-//     }
-//     saludar () {
-//         console.log('Hola que tal' );
-//     }
-// }
-// let nombre = prompt ('Decime tu nombre')
-// let nacionalidad = prompt ('Desde donde me seguis')
-
-// const persona = new Persona (nombre, nacionalidad)
-
-// alert(`¡Hola ${nombre}, gracias por seguirme desde ${nacionalidad}!`)
-
-// console.log(persona);
-// persona.saludar()
+// alert(`¡Hola ${nombre}! Gracias por sumarte a ViajeroSecrets`)
 
 class Producto {
-    constructor (nombre, precio, enStock){
+    constructor (id, nombreProducto, precio, color, stock){
 
-    this.nombre = nombre;
+    this.id = id;
+    this.nombreProducto = nombreProducto;
     this.precio = precio;
-    this.enStock = enStock;
+    this.color = color
+    this.stock = stock
     }   
 
     getPrecioConIva() {
@@ -52,10 +22,38 @@ class Producto {
     getPrecio() {
         return this.precio
     }
+    getNombreProducto(){
+        return this.nombreProducto
+    }
+    getStock(){
+        return this.stock
+    }
 }
 
-const producto1 = new Producto ('Fernet', 500)
+const buzo1 = new Producto (01, "buzo mundo", 6500, "azul", 10)
 
-console.log(producto1.getPrecio());
+const buzo2 = new Producto (02, "buzo viajar", 6000, 'blanco', 9)
 
-console.log(producto1.getPrecioConIva());
+const remera1 = new Producto (03, "remera mundo", 2500, 'negro', 'sin stock')
+
+const remera2 = new Producto (04, 'remeron viajar', 3100, 'blanco', 20)
+
+const barbijo1 = new Producto (05, "barbijo ViajeroSecrets", 500, 'unico',4)
+
+
+const productos = [buzo1, buzo2, remera1, remera2]
+
+
+console.log(productos.length);
+
+productos.push(barbijo1)
+
+console.log(productos.length);
+
+console.log(productos);
+
+const sucursales = ["Mar del Plata", "Buenos Aires", "La Plata"]
+
+sucursales.sort()
+
+console.log(sucursales);
