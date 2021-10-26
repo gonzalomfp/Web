@@ -57,3 +57,24 @@ const sucursales = ["Mar del Plata", "Buenos Aires", "La Plata"]
 sucursales.sort()
 
 console.log(sucursales);
+
+
+let productos = [
+    {
+        id: 01,
+        clase: "Buzo",
+        nombre: "Mundo",
+        color: "Azul",
+        precio: 6500,
+        talle: ["S", "M", "L", "XL"]
+    },
+    {
+        id: 01,
+        clase: "Buzo",
+        nombre: "Viajar",
+        color: ["Azul", "Negro", "Blanco"],
+        precio: 6500,
+        talle: ["S", "M", "L", "XL"]
+    }
+
+]

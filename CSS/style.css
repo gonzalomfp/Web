@@ -1,48 +1,88 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box; }
+
+/* Colores */
+/* ------------------ */
 header {
-  background-image: url(../assets/fondoIndex1.png); }
+  display: flex;
+  justify-content: space-around; }
+
+header img {
+  width: 4rem;
+  border: none; }
+
+header nav {
+  display: flex;
+  width: 90%;
+  align-items: center;
+  justify-items: center;
+  justify-content: space-around;
+  font-family: 'Kanit', sans-serif; }
+
+header nav a {
+  color: #3b5998;
+  text-decoration: none;
+  padding: .5rem 1.5rem;
+  border-radius: 10px; }
+
+header nav a:hover {
+  background-color: #3b5998;
+  color: white; }
 
 h1 {
-  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-  color: white; }
-
-h2 {
-  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-  color: white; }
-
-.headerContainer {
-  height: 70vh;
-  display: flex;
-  flex-direction: column; }
-
-.headerContainerTitle {
-  order: 2;
-  height: 25%;
-  justify-content: flex-end;
-  padding-left: 2rem;
-  font-size: 40px; }
-
-.headerContainerSubtitle {
-  order: 3;
-  height: 25%;
-  justify-content: flex-start;
-  padding-left: 2rem;
-  font-size: 20px; }
-
-.headerContainerSpace1 {
-  order: 1;
-  height: 25%; }
-
-.headerContainerSpace2 {
-  order: 4;
-  height: 25%; }
-
-.mainContainer {
-  background-color: white;
-  height: 50vh; }
-
-.endContainer {
+  font-family: 'Kanit', sans-serif;
+  font-size: 5rem;
+  color: white;
   background-color: #3b5998;
-  height: 80vh; }
+  text-align: center; }
 
-.footerContainer {
-  height: 40vh; }
+.subtitulo {
+  color: #3b5998;
+  font-family: 'Kanit', sans-serif;
+  margin: 2rem; }
+
+h4 {
+  font-family: 'Kanit', sans-serif;
+  padding: .5rem 2rem;
+  background-color: #3b5998;
+  color: white;
+  width: 100%; }
+
+.indexContainer {
+  display: flex;
+  height: 60vh;
+  flex-direction: column;
+  text-align: center; }
+
+.productosDestacados {
+  display: flex;
+  justify-content: space-around; }
+
+.producto {
+  display: flex;
+  flex-direction: column;
+  margin: 3rem;
+  padding: .5rem;
+  width: 40%;
+  align-items: center; }
+
+p {
+  justify-content: flex-end;
+  font-family: 'Kanit', sans-serif; }
+
+img {
+  width: 60%;
+  margin: 1rem;
+  border: 2px solid black; }
+
+footer {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 1rem;
+  align-items: center; }
+
+footer a img {
+  width: 2.5rem;
+  border: none; }

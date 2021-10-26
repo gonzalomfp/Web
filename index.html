@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -10,47 +10,77 @@
     <!-- Link Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Mate+SC&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,100;0,300;0,400;1,100&display=swap" rel="stylesheet">  
     <!-- Link para Javascript -->
-    <script src="app.js"></script>
+    <script src="./scripts/productos.js"></script>
+    <script src="./scripts/main.js"></script>
     <!-- Link del Logo -->
-    <link rel="shortcut icon" href="logoNav1.png" type="image/x-icon">
+    <link rel="shortcut icon" href="./assets/logoNav1.png" type="image/x-icon">
   </head>
 <body>
-
-  <header class="headerContainer">
-      <div class="headerContainerSpace1">
-
-      </div>
-      <div class="headerContainerTitle">
-        <h1>ViajeroSecrets</h1>
-      </div>
-      <div class="headerContainerSubtitle">
-        <h2>Tienda</h2>
-      </div>
-      <div class="headerContainerSpace2">
-      </div>
+  <header>
+    <img src="./assets/logoNav1.png" alt="Logo">
+    <nav>
+      <a href="#">Inicio</a>
+      <a href="#">Productos</a>
+      <a href="#">Contacto</a>
+      <a href="#">Blog</a>
+    </nav>
   </header>
+  <div>
+    <h1>La tienda viajera</h1>
+  </div>
   <main>
-    <div class="mainContainer">
-
-
-
-
-    </div>
-    <div class="endContainer">
-
-
-
-
-    </div>
-  </main>
-  <footer>
-    <div class="footerContainer">
-        <div>
-
+    <div class="indexContainer">
+      <h2 class="subtitulo">Productos Destacados</h2>
+        <div class="productosDestacados">
+          <div class="producto">
+            <h4>Buzo Mundo</h4>
+            <img src="./assets/buzo1.png" alt="Buzo Mundo">
+            <p>Precio: $6500</p>
+          </div>
+          <div class="producto">
+            <h4>Remera Viaje</h4>
+            <img src="./assets/remera1.png" alt="Remera Viaje">
+            <p>Precio: $2400</p>
+          </div>
+          <div class="producto">
+            <h4>Barbijo ViajeroSecrets</h4>
+            <img src="./assets/barbijo.png" alt="Barbijo Viajero">
+            <p>Precio: $690</p>
+          </div>
         </div>
     </div>
+    <div class="indexContainer">
+      <h2 class="subtitulo">Promociones</h2>
+        <div class="productosDestacados">
+          <div class="producto">
+            <h4>Promo Buzos</h4>
+            <img src="./assets/buzo2.png" alt="Buzos">
+            <p>Precio: $̶1̶3̶0̶0̶0̶ $10000</p>
+          </div>
+          <div class="producto">
+            <h4>Promo Buzo | Remera</h4>
+            <img src="./assets/remera2.png" alt="Remera Viaje">
+            <p>Precio: $̶8̶9̶0̶0̶ $7100 </p>
+          </div>
+          <div class="producto">
+            <h4>Promo Buzo | Barbijo</h4>
+            <img src="./assets/promoBarbijoj.png" alt="">
+            <p>Precio: $̶7̶1̶9̶0̶ 6800</p>
+          </div>
+        </div>
+    </div>
+  </main>
+
+  <footer>
+    <a href="#"> <img src="./assets/logoIG.svg" alt="Instagram"> </a>
+    <a href="#"> <img src="./assets/logoFB.png" alt="Facebook"> </a>
+    <p>Gonzalo Fernandez | Copyright</p>
+    <a href="#"> <img src="./assets/logo wsp.png" alt="WhatsApp"> </a>
+    <a href="#"> <img src="./assets/logoTW.png" alt="Twitter"> </a>
   </footer>
+
+
 </body>
 </html>

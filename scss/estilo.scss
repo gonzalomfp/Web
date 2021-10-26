@@ -1,63 +1,106 @@
-$myBlue: #3b5998;
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+  }
 
+  /* Colores */
 
-header {
-    background-image: url(../assets/fondoIndex1.png);
-}
+  $myBlue: #3b5998;
 
-h1 {
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  /* ------------------ */
+  
+  header {
+      display: flex;
+      justify-content: space-around;
+  }
+
+  header img {
+      width: 4rem;
+      border: none;
+  }
+
+  header nav {
+    display: flex;
+    width: 90%;
+    align-items: center;
+    justify-items: center;
+    justify-content: space-around;
+    font-family: 'Kanit', sans-serif;;
+  }
+
+  header nav a{
+    color: $myBlue;
+    text-decoration: none;
+    padding: .5rem 1.5rem;
+    border-radius: 10px;
+  }
+
+  header nav a:hover {
+      background-color: #3b5998;
+      color: white;
+  }
+
+  h1{
+      font-family: 'Kanit', sans-serif;
+      font-size: 5rem;
+      color: white;
+      background-color: $myBlue;
+      text-align: center;
+  }
+
+  .subtitulo {
+    color: $myBlue;
+    font-family: 'Kanit', sans-serif;
+    margin: 2rem;
+  }
+  h4 {
+    font-family: 'Kanit', sans-serif;
+    padding: .5rem 2rem;
+    background-color: $myBlue;
     color: white;
-}
+    width: 100%;
+  }
+  .indexContainer {
+    display: flex;
+    height: 60vh;
+    flex-direction: column;
+    text-align: center;
+  }
 
-h2 {
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    color: white;
-}
+  .productosDestacados {
+    display: flex;
+    justify-content: space-around;
+  }
 
-.headerContainer {
-    height: 70vh;
+  .producto {
     display: flex;
     flex-direction: column;
-}
+    margin: 3rem;
+    padding: .5rem;
+    width: 40%;
+    align-items: center;
+  }
 
-.headerContainerTitle {
-    order: 2;
-    height: 25%;
-    justify-content: flex-end;
-    padding-left: 2rem;
-    font-size: 40px;
-}
+  p {
+    justify-content: flex-end; 
+    font-family: 'Kanit', sans-serif; 
+  }
 
-.headerContainerSubtitle {
-    order: 3;
-    height: 25%;
-    justify-content: flex-start;
-    padding-left: 2rem;
-    font-size: 20px;
-}
+  img {
+    width: 60%;
+    margin: 1rem;
+    border: 2px solid black;
+  }
 
-.headerContainerSpace1 {
-    order: 1;
-    height: 25%;
-}
+  footer {
+    display: flex;
+    justify-content:  center;
+    margin-bottom: 1rem;
+    align-items: center;
+  }
 
-.headerContainerSpace2 {
-    order: 4;
-    height: 25%;
-}
-
-.mainContainer {
-    background-color: white;
-    height: 50vh;
-}
-
-.endContainer {
-    background-color: $myBlue;
-    height: 80vh;
-}
-
-.footerContainer {
-    height: 40vh;
-}
-
+  footer a img {
+    width: 2.5rem;
+    border: none;
+  }
