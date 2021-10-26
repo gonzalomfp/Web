@@ -104,3 +104,98 @@
     width: 2.5rem;
     border: none;
   }
+
+  @media only screen 
+and (min-device-width : 320px) 
+and (max-device-width : 480px) {
+
+  header {
+    display: flex;
+    justify-content: space-around;
+}
+
+header img {
+    width: 2rem;
+    border: none;
+}
+
+header nav {
+  display: flex;
+  width: 90%;
+  align-items: center;
+  justify-items: center;
+  justify-content: space-around;
+  font-family: 'Kanit', sans-serif;;
+}
+
+header nav a{
+  color: $myBlue;
+  text-decoration: none;
+  padding: 0rem 1rem;
+  border-radius: 10px;
+  font-size: .8rem;
+}
+
+header nav a:hover {
+    background-color: #3b5998;
+    color: white;
+}
+
+h1{
+    font-family: 'Kanit', sans-serif;
+    font-size: 2rem;
+    color: white;
+    background-color: $myBlue;
+}
+
+.subtitulo {
+  color: $myBlue;
+  font-family: 'Kanit', sans-serif;
+  font-size: 1rem;
+}
+h4 {
+  font-family: 'Kanit', sans-serif;
+  background-color: $myBlue;
+  color: white;
+  width: 100%;
+}
+.indexContainer {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  height: 100%;
+}
+
+.productosDestacados {
+  display: flex;
+  flex-direction: column;
+}
+
+.producto {
+  display: flex;
+  flex-direction: column;
+  width: auto;
+}
+
+
+img {
+  width: 15rem;
+  margin: 1rem;
+  border: 2px solid black;
+}
+
+footer {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content:  center;
+  margin-bottom: 1rem;
+  align-items: center;
+}
+
+footer p {
+  order: 5;
+  font-size: 10px;
+}
+
+
+}
