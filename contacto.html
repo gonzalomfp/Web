@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Gonzalo Fernandez Front End Developer Profile">
     <title>Gonzalo Fernandez</title>
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="./css/style.css">
     <!-- Link Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -30,16 +30,40 @@
 
     <h1>La tienda viajera</h1>
 
-  <main>
-    <div class="indexContainer">
-      <h2 class="subtitulo">Contacto</h2>
-        <form action="">
-            <fieldset>
-                <legend>Dejanos tu consulta</legend>
-            </fieldset>
-
-        </form>
-    </div>
+  <main class="formContainer">     
+                <h2 class="subtitulo">Formulario de Contacto</h2>
+                <form action="#" method="get">
+                    <div class="formDiv">
+                        <label for="input_name">Nombre: </label>
+                        <input type="text" name="Name" id="input_name">
+                        <label for="input_lastname">Apellido: </label>
+                        <input type="text" id="input_lastname" name="Last_Name">
+                    </div>
+                    <div class="formDiv">
+                        <label for="input_city">Ciudad: </label>
+                        <input type="text" id="input_city" name="City">
+                        <label for="input_zipcode">CP:</label>
+                        <input type="number" id="input_zipcode" name="Zip_Code">
+                    </div>
+                    <div class="formDiv">
+                        <h4>Edad:</h4>
+                        <label for="input_age">Entre 18 y 24 años<input type="radio" name="age" value="18_24" id="input_age"></label>
+                        <label for="input_age2">Entre 25 y 30 años<input type="radio" name="age" value="25_30" id="input_age2"></label>
+                        <label for="input_age3">+ 30 años<input type="radio" name="age" value="+30" id="input_age3"></label>
+                    </div>
+                    <div class="formDiv">
+                        <h4>¿Qué información te gustaría recibir?:</h4>
+                        <p> (Elegí todas las opciones que quieras)</p>
+                        <label for="check_info1">Nuevos Lanzamientos</label>
+                        <input type="checkbox" name="info" value="nuevos_lanzamientos" id="check_info1">
+                        <label for="check_info2">Descuentos</label>
+                        <input type="checkbox" name="info" value="descuentos" id="check_info2">
+                        <label for="check_info3">Promos de Viajes</label>
+                        <input type="checkbox" name="info" value="promos_viajes" id="check_info3">
+                        <label for="check_info4">Programas y Visas | ViajeroSecrets</label>
+                        <input type="checkbox" name="info" value="programas_y_visas" id="check_info4">
+                    </div>
+              </form>
   </main>
 
   <footer>

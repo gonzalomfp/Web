@@ -106,10 +106,27 @@
   }
 
   form {
-    width: 60%;
-    justify-content: center;
+    width: 75%;
+  }
+  .formContainer {
+    display: flex;
+    height: 60vh;
+    flex-direction: column;
+    text-align: center;
   }
 
+  .formDiv {
+    margin-top: 10px;
+  }
+
+  label {
+    font-family: 'Kanit', sans-serif; 
+  }
+
+  input {
+    font-family: 'Kanit', sans-serif; 
+    width: 10rem;
+  }
   @media only screen 
 and (min-device-width : 320px) 
 and (max-device-width : 480px) {
